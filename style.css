@@ -1,0 +1,245 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and Fonts */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #000000;
+  color: #eaeaea;
+  line-height: 1.6;
+  padding-bottom: 60px;
+}
+
+/* Header Title */
+header {
+  background-color: #222;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 4px solid #444;
+}
+
+header .Title {
+  font-size: 2.8rem;
+  color: #f9d36b;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Navigation Bar */
+.navbar {
+  background-color: #1f1f1f;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-bottom: 2px solid #000000;
+}
+
+.navbar a {
+  color: #eaeaea;
+  padding: 14px 20px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.navbar a:hover {
+  background-color: #333;
+  color: #f9d36b;
+}
+
+/* Sections */
+section {
+  background-color: #171717;
+  padding: 2rem;
+  margin: 2rem auto;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 1100px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+  border-left: #f9d36b;
+}
+
+h2, h3, h4 {
+  color: #f9d36b;
+  margin-bottom: 1rem;
+}
+
+p, li {
+  color: #dcdcdc;
+  margin-bottom: 1rem;
+}
+
+/* Image & Video */
+img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 8px;
+  margin: 1rem 0;
+  display: block;
+}
+
+video {
+  width: 100%;
+  max-width: 640px;
+  height: auto;
+  border-radius: 8px;
+  margin: 1rem 0;
+}
+
+/* Lists */
+ul, ol {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background-color: #181818;
+  margin: 1rem 0;
+  padding: 1rem;
+  border-left: 5px solid #f9d36b;
+  border-radius: 6px;
+}
+
+/* Utility */
+main, div {
+  margin-bottom: 2rem;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  header .Title {
+    font-size: 2rem;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section {
+    padding: 1rem;
+  }
+
+  img, video {
+    max-width: 100%;
+  }
+}
+
+/* Biome Base Style */
+.biome {
+  padding: 2rem;
+  margin: 2rem auto;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+  color: #f0f0f0;
+  width: 90%;
+  max-width: 1100px;
+}
+
+/* Windward Plains – Golden Storm */
+.windward {
+  background: linear-gradient(135deg, #4a382f, #5c4f2a);
+  border-left: 6px solid #ffc107;
+}
+
+.windward h2, .windward h4 {
+  color: #b39835;
+}
+
+/* Scarlet Forest – Crimson Growth */
+.scarlet {
+  background: linear-gradient(135deg, #3b1f1f, #0e3a08, #365632);
+  border-left: 6px solid #ff4f4f;
+}
+
+.scarlet h2, .scarlet h4 {
+  color: #cf4141;
+}
+
+/* Oilwell Basin – Industrial Toxic */
+.oilwell {
+  background: linear-gradient(135deg, #2d2d2d, #58402b);
+  border-left: 6px solid #ff9100;
+}
+
+.oilwell h2, .oilwell h4 {
+  color: #d9773a;
+}
+
+/* Iceshard Cliffs – Frozen Abyss */
+.iceshard {
+  background: linear-gradient(135deg, #1c1f2a, #324b6b);
+  border-left: 6px solid #8ed0ff;
+}
+
+.iceshard h2, .iceshard h4 {
+  color: #cceeff;
+}
+
+
+/*Flagship Colors - White Wraith */
+.Flagship {
+    background: linear-gradient(135deg, #373737, #f0f0f0);
+    border-left: 6px solid #e2c5ff;
+}
+
+/*Old Timers - Returning Monsters*/
+.Return {
+    background: linear-gradient(135deg, rgb(115, 90, 40), #575454);
+    border-left: 6px solid #324b6b;
+}
+
+/* Grid container */
+.weapon-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(300px, 1fr));
+  gap: 1.5rem;
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+/* Individual weapon card */
+.weapon-grid li {
+  background-color: #000000;
+  padding: 1rem;
+  border-radius: 8px;
+  border-left: 5px solid #f9d36b;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+}
+
+/* Weapon images */
+.weapon-grid img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+}
+
+/* Weapon videos */
+.weapon-video {
+  width: 100%;
+  margin-top: 1rem;
+  border-radius: 6px;
+}
+
+.Weapon .weapon-grid img {
+    width: auto; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Space between image and text */
+    align-items: center;
+}
+
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+}
